@@ -4,7 +4,7 @@
   <br>{{project.name}}
   <br>{{project.description}}
 
-  <a href="#" ui-sref="home.project({id: project.id})">View Project</a>
-  <a href="#" ui-sref="home.edit({id: project.id})">Edit Project</a>
+  <a href="#" ui-sref="projects.show({id: project.id})">View Project</a>
+  <a href="#" ui-sref="projects.edit({id: project.id})">Edit Project</a>
   <a href ng-click="ctrl.deleteProject(project)">Delete Project</a>
 </div> 
