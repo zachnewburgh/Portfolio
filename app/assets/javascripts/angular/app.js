@@ -1,6 +1,10 @@
 angular
   .module('app', ['ui.router', 'ngResource', 'templates']) 
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
     $stateProvider
       .state('projects', {
         templateUrl: 'navbar/navbar.html',
