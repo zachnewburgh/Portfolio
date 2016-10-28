@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'responders'
 # Rails integration for bower
 gem 'bower-rails'
+# Use Angular templates with Rails' asset pipeline
+gem 'angular-rails-templates'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
