@@ -3,6 +3,7 @@
 <div ng-repeat="project in ctrl.projects">
   <br>{{project.name}}
   <br>{{project.description}}
+  <br>{{project.url}}
 
   <a href="#" ui-sref="projects.show({id: project.id})">View Project</a>
   <a href="#" ui-sref="projects.edit({id: project.id})">Edit Project</a>
