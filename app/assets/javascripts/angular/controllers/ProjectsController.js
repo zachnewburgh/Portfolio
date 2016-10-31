@@ -26,7 +26,7 @@ function ProjectsController(Project, $location, $state, $stateParams) {
 
 };
 
-ProjectsController.$inject = ['Project', '$location', '$state', '$stateParams'];
+ProjectsController.$inject = ['$location', '$state', '$stateParams'];
 
 angular
   .module('app')
