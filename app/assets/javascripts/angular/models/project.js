@@ -5,6 +5,8 @@ function Project($resource) {
   return Project;
 };
 
+Project.$inject = ['$resource'];
+
 angular
   .module('app')
   .factory('Project', Project);
