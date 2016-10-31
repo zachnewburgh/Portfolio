@@ -1,6 +1,7 @@
 angular
   .module('app', ['ui.router', 'ngResource', 'templates']) 
-  .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', 
+    function($stateProvider, $urlRouterProvider, $locationProvider) {
     $locationProvider.html5Mode({
         enabled: true,
         requireBase: false
@@ -31,4 +32,4 @@ angular
         controller: 'ProjectsController as ctrl'
       });
     $urlRouterProvider.otherwise('/');
-});
+}]);
