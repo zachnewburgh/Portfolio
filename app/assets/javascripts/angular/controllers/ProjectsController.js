@@ -4,7 +4,7 @@ ProjectsController = ['Project', '$location', '$state', '$stateParams', function
   
   ctrl.projects = Project.query();
   ctrl.projectNew = new Project();
-  ctrl.project = Project.get({id: $stateParams.id});
+  ctrl.project = $stateParams.id ? Project.get({id: $stateParams.id}): null;
 
   ctrl.addProject = function() {
     ctrl.projectNew.$save(function() {
