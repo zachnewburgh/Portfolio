@@ -3,7 +3,7 @@ Project = ['$resource', function($resource) {
   var Project = $resource(
     base + '/api/v1/projects/:id.json', {id: '@id'}, {
     query: {method: 'GET', isArray: true},
-    get: {method: 'GET', isArray: false},
+    get: {method: 'GET', isArray: true},
     update: {method: 'PUT'}
   });
   return Project;
