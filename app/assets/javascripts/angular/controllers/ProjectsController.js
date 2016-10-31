@@ -1,4 +1,4 @@
-function ProjectsController(Project, $location, $state, $stateParams) {
+ProjectsController = ['Project', '$location', '$state', '$stateParams', function(Project, $location, $state, $stateParams) {
 
   var ctrl = this;
   
@@ -24,9 +24,7 @@ function ProjectsController(Project, $location, $state, $stateParams) {
     });
   };
 
-};
-
-ProjectsController.$inject = ['$location', '$state', '$stateParams'];
+}];
 
 angular
   .module('app')
