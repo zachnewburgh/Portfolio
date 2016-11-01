@@ -46,6 +46,10 @@
   border-bottom: 3px solid orange;
 }
 
+a.no-hover-bottom-border:hover {
+  border-bottom: 0;
+}
+
 .navbar-menu {
   flex: 1; 
   text-align: 
