@@ -13,22 +13,36 @@
  *= require_tree .
  *= require_self
  */
-.navbar {
+
+/* NAVBAR */
+.navbar, .navbar-dropdown-container  {
   display: flex; 
   background: #0F2432; 
   color: white; font-size: 1.5em; 
   padding: 0.25% 1.5%;
+  min-height: 6vh;
+}
+
+.navbar-dropdown-container {
+  background: #0F2C3E;
+}
+
+.navbar-dropdown {
+  text-align: right; 
+  background: #0F2432; 
+  padding: 1% 1% 1% 1%; 
+  font-size: 0.75em;
 }
 
 .navbar-title {
   flex: 1; 
 }
 
-.navbar a {
+.navbar a, .navbar-dropdown-container a {
   color: white;
 }
 
-.navbar a:hover {
+.navbar a:hover, .navbar-dropdown-container a:hover {
   border-bottom: 3px solid orange;
 }
 
@@ -36,4 +50,52 @@
   flex: 1; 
   text-align: 
   right;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* INDEX */
+
+.container {
+  display: flex; 
+  flex-flow: column wrap; 
+  min-width: 100vw;
+}
+
+#main {
+  background: #0F2C3E; 
+  flex: 1; 
+  min-height: 94vh;
+}
+
+.intro {
+  text-align: center; 
+  color: white;
+}
+
+.intro img {
+  margin: 1% auto 0; 
+  border-radius: 50%; 
+  box-shadow: 0px 0px 4px 4px #888888;
+}
+
+.intro h1 {
+  margin: 1% auto 0.5%; 
+  font-size: 2em;
+}
+
+.intro h2 {
+  margin: 0 auto 1%;
+  font-size: 1.5em;
+}
+
+#linkedin-btn {
+  background: white; 
+  padding: 0.5%; 
+  border-radius: 5px; 
+  box-shadow: 0px 0px 2px 2px #888888; 
+  width: 7.5%; 
+  min-width: 100px;
 }

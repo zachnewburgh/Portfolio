@@ -4,66 +4,19 @@
   </div>
 
   <div class="navbar-menu">
-    <span class="orange-text">.</span><a href="#">menu</a>
+    <span class="orange-text">.</span><a href="#" ng-click="dropdown = !dropdown">projects</a> 
   </div>
 </div>
 
-
-
-
-
-<!-- <div class="row valign-wrapper">
-  <div class="col s2" style="margin: auto; display: block;">
-    <img src="https://media.licdn.com/media/p/3/005/09e/3d1/2752e5b.jpg" alt="zach-newburgh" class="circle responsive-img">
-  </div> 
-</div>
-
-<div class="row valign-wrapper">
-  <div style="margin: auto;">
-    <h1 style="font-size: 2.5em;">Zach Newburgh</h1>
+<div class="navbar-dropdown-container">
+  <div class="navbar-title">
   </div>
-</div>
 
- -->
-
-
-
-
-<!-- <nav>
-  <div class="nav-wrapper indigo darken-4">
-    <div class="brand-logo center">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <div class="navbar-dropdown" ng-class="{hidden: !dropdown}">
+    <div ng-repeat="project in ctrl.projects" ng-class="{hidden: !dropdown}">
+      <a target="_blank" href="{{project.url}}">{{project.name.split(" ")[0]}}</a><br>
     </div>
   </div>
-</nav> -->
-
-<!-- <nav>
-  <div class="nav-wrapper indigo darken-2">
-    <ul id="nav-mobile" class="hide-on-med-and-down">
-      <li><a href="#" ui-sref="projects.index" ui-sref-active="active">Home</a></li>
-      <li><a href="#" ui-sref="projects.new" ui-sref-active="active">New</a></li>
-    </ul>
-  </div>
-</nav>
-
-      <div class="col s12 m8 offset-m2 l6 offset-l3">
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s7">
-              <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/10269444_10204802316011687_7598557748277988577_n.jpg?oh=88e406258f25151d9d2f91ab1b9128df&oe=58880016" alt="" class="circle responsive-img">
-            </div>
-          </div>
-
-          <div class="row valign-wrapper">
-            <div class="col s7">
-              <h3>Zach Newburgh</h3>
-            </div>
-          </div>
-        </div>
-      </div> -->
+</div>
 
 <div ui-view></div>
