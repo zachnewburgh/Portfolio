@@ -13,9 +13,13 @@
   </div>
 
   <div class="navbar-dropdown" ng-class="{hidden: !dropdown}">
+    <div class="dropdown-title">Coding</div>
     <div ng-repeat="project in ctrl.projects" ng-class="{hidden: !dropdown}">
       <a target="_blank" href="{{project.url}}">{{project.name.split(" ")[0]}}</a><br>
     </div>
+    <br>
+    <div class="dropdown-title"">Social Media Consulting</div>
+    <div><a target="_blank" href="http://www.instagram.com/thegreydognyc">The Grey Dog</a></div>
   </div>
 </div>
 
