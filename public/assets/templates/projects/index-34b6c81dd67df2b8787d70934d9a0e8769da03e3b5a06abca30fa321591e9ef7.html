@@ -1,0 +1,56 @@
+<div class="container">
+  <div id="main">
+    <div class="intro">
+      <img src="assets/zach.jpg" />
+      <h1>Zach Newburgh</h1>
+      <h2>Software Engineer</h2>
+      <br>
+      <a target="_blank" href="http://www.linkedin.com/in/zachnewburgh/"><img id="linkedin-btn" src="assets/linkedin-btn.png"/></a>
+    </div>
+</div>
+
+<!-- 
+  <div id="about" style="background: #EDEDED; flex: 1; min-height: 100vh; display: flex; flex-flow: row wrap;">
+    <div style="flex: 1; padding: 3% 0.5%;" ng-repeat="project in ctrl.projects">
+      <div class="col s12 m3">
+        <div class="card" style="min-width: 325px; min-height: 350px; box-shadow: 0px 0px 1px 1px #888888;">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="responsive-img" src="https://placehold.it/300x200">
+          </div>
+          <div class="card-content activator">
+            <span class="card-title grey-text text-darken-4 activator" style="word-wrap: wrap;">{{project.name}}</span> 
+
+            <p><a target="_blank" href="{{project.url}}">Link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{project.name}}<i class="material-icons right">close</i></span>
+            <p>{{project.description}}</p>
+
+            <a href="#" ui-sref="projects.show({id: project.id})">View Project</a> | 
+            <a href="#" ui-sref="projects.edit({id: project.id})">Edit Project</a> | 
+            <a href ng-click="ctrl.deleteProject(project)">Delete Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" style="background: #26404F; display: flex; justify-content: center; padding: 2%">
+    <div class="form" style="background: #EDEDED; padding: 3%">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" required>
+
+        <label for="email">Email</label>
+        <input type="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" required>
+
+        <label for="message">Message</label>
+        <textarea></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </div>
