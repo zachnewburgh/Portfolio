@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="navbar-title">
+    <a class="no-hover-bottom-border" ui-sref="projects.index">portfolio</a><span class="orange-text">.</span>
+  </div>
+
+  <div class="navbar-menu">
+    <span class="orange-text">.</span><a href="#" ng-click="dropdown = !dropdown">projects</a> 
+  </div>
+</div>
+
+<div class="navbar-dropdown-container">
+  <div class="navbar-title">
+  </div>
+
+  <div class="navbar-dropdown" ng-class="{hidden: !dropdown}">
+    <div class="dropdown-title">Blog</div>
+    <div><a target="_blank" href="http://zachnewburgh.github.io">Code Your Enthusiasm</a></div>
+    <br>
+    <div class="dropdown-title">Coding</div>
+    <div ng-repeat="project in ctrl.projects" ng-class="{hidden: !dropdown}">
+      <a target="_blank" href="{{project.url}}">{{project.name.split(" ")[0]}}</a><br>
+    </div>
+    <br>
+    <div class="dropdown-title"">Social Media Consulting</div>
+    <div><a target="_blank" href="http://www.instagram.com/thegreydognyc">The Grey Dog</a></div>
+  </div>
+</div>
+
+<div ui-view></div>
